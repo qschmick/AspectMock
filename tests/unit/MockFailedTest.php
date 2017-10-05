@@ -7,12 +7,12 @@ use AspectMock\Proxy\ClassProxy;
 use AspectMock\Proxy\InstanceProxy;
 use \AspectMock\Core\Registry as double;
 
-class MockFailedTest extends \PHPUnit_Framework_TestCase 
+class MockFailedTest extends \PHPUnit\Framework\TestCase
 {
     
     protected function setUp()
     {
-        $this->expectException('PHPUnit_Framework_ExpectationFailedException');
+        $this->expectException('\PHPUnit\Framework\ExpectationFailedException');
     }        
     
     protected function tearDown()
